@@ -4,7 +4,7 @@
   "engines": {
     "node": ">=4.0"
   },
-  "description": "Given image url, resize and save to s3",
+  "description": "Serverless Service that takes an image url and returns a 100x100 thumbnail.",
   "author": "Eslam A. Hefnawy <eslam@serverless.com>",
   "license": "",
   "repository": {
