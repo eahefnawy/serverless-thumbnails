@@ -1,0 +1,22 @@
+{
+  "name": "serverless-thumbnails",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "description": "Given image url, resize and save to s3",
+  "author": "Eslam A. Hefnawy <eslam@serverless.com>",
+  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eahefnawy/serverless-thumbnails"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.2.4",
+    "bluebird": "^2.10.1",
+    "dotenv": "^2.0.0",
+    "gm": "^1.20.0",
+    "request-promise": "^0.4.3",
+    "shortid": "^2.2.2"
+  }
+}

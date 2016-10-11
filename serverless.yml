@@ -1,0 +1,22 @@
+service: serverless-thumbnail
+
+provider:
+  name: aws
+  iamRoleStatements:
+  - Effect: Allow
+    Action:
+    - s3:putObject
+    Resource: '*'
+
+functions:
+  thumbnail:
+    handler: functions.thumbnail
+    events:
+      - http: get thumbnail
+
+resources:
+  Resources:
+    NewResource:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${env:THUMBNAILS_BUCKET}
