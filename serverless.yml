@@ -6,6 +6,7 @@ provider:
   - Effect: Allow
     Action:
     - s3:putObject
+    - s3:PutObjectAcl
     Resource: '*'
 
 functions:
